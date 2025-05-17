@@ -14,12 +14,11 @@ export default function LocationsPage() {
   return (
     <div className="space-y-8">
       <div className="flex items-center justify-between">
-        <h1 className="text-4xl font-bold tracking-tight">Locations</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Episode Locations</h1>
       </div>
 
       <Suspense
-        fallback={<div className="h-20 bg-muted animate-pulse rounded-md" />}
-      >
+        fallback={<div className="h-20 bg-muted animate-pulse rounded-md" />}>
         <LocationFilters />
       </Suspense>
 
